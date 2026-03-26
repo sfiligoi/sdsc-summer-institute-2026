@@ -1,8 +1,8 @@
 # Internship Opportunity for Undergraduate Student Volunteers
 
-We are looking for undergraduate volunteers to assist during the sessions of the SDSC Summer Institute 2026.
+We are looking for undergraduate volunteers to assist during the sessions of the SDSC Summer Institute 2026 (see below) and the CIML 2026 Summer Institute (https://github.com/ciml-org/ciml-summer-institute-2026/blob/main/ciml-si26-internship.md). Volunteers may assist during both sessions
 
-## Session dates
+## SDSC Summer Institute Session dates
 **Thursday, July 23, 2026 – Tuesday, August 4, 2026** (see the agenda for the day-by-day schedule).
 
 ## Volunteer responsibilities
@@ -13,17 +13,17 @@ We are looking for undergraduate volunteers to assist during the sessions of the
 We would like to have a **different student for each session**.
 
 ## Internship credit
-Volunteers will receive internship credit for the hours they work.
+Volunteers will receive internship credit for the hours they work and an SDSC Internhip CCR for thier official transcripts (note CCRs require 30 hours of effort).
 
 ## Requirements
 Students are expected to be familiar with:
 - Running Linux commands at the terminal/command line
 - Using git commands at the terminal
+- Python and basic HPC concepts experience welcome.
 
 ## Schedule
 See the full schedule in the [Summer Institute 2026 agenda](./AGENDA.md).
 
 ## Interested?
-Send an email to: 
 
-**[EMAIL ADDRESS TBD]**
+Please apply using our Google form:  FORM HERE
