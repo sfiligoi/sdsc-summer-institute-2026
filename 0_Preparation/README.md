@@ -96,9 +96,9 @@ Access your training account via:
 
 ### GitHub
 
-Training material is on the [SDSC Summer Institute 2026 GitHub repo](https://github.com/sdsc/sdsc-summer-institute-2026). One of the Wednesday sessions requires a GitHub account. If you don't have one, create a free account [here](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-github/signing-up-for-a-new-github-account).
-
-For GitHub usage on SDSC systems, see [here](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/using_github).
+- A GitHub account is required.
+- Training material is on the [SDSC Summer Institute 2026 GitHub repo](https://github.com/sdsc/sdsc-summer-institute-2026).
+- For GitHub usage on SDSC systems, see [here](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/using_github).
 
 ### Slack
 
