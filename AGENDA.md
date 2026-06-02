@@ -43,7 +43,7 @@ Helper(s) convention: blank means a helper is needed (TBD); `-` means no helper 
 | Time (Pacific)      | Duration    | Session                    | Speaker(s)                 | Helper(s) |
 | :------------------ | :---------- | :------------------------- | :------------------------- | :-------- |
 | 8:00 AM – 8:30 AM   | 30 min      | Check-in & Light Breakfast | -                          | -         |
-| 8:30 AM - 10:30 AM  | 2 hr        | Knowledge Management       | Subhasis Dasgupta          |           |
+| 8:30 AM - 10:30 AM  | 2 hr        | Knowledge Management       | Subhasis Dasgupta          | Andy Liang |
 | 10:30 AM - 12:00 PM | 1 hr 30 min | Deep Learning - Part 1     | Mai Nguyen, Paul Rodriguez |           |
 | 12:00 PM - 1:30 PM  | 1 hr 30 min | Lunch                      | -                          | -         |
 | 1:30 PM - 5:00 PM   | 3 hr 30 min | Deep Learning – Part 2     | Mai Nguyen, Paul Rodriguez |           |
