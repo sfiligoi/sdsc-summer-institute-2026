@@ -88,7 +88,6 @@ Access your training account via:
 ### Launching Jupyter Notebooks
 
 - Via the Expanse Portal: https://portal.expanse.sdsc.edu
-- Setting up CONDA environments and Jupyter on Expanse: [https://github.com/sdsc-hpc-training-org/notebooks-sharing](https://github.com/sdsc-hpc-training-org/notebooks-sharing)
 
 [Back to Top](#top)
 <hr>
