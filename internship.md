@@ -17,6 +17,8 @@ We would like to have a **different student for each session**.
 ## Internship credit
 Volunteers will receive internship credit for the hours they work and an SDSC Internhip CCR for thier official transcripts (note CCRs require 30 hours of effort).
 
+See [ccr_info.md](./ccr_info.md) for detailed instructions on how students earn CCR credit and how supervisors validate participation.
+
 ## Requirements
 Students are expected to be familiar with:
 - Running Linux commands at the terminal/command line
@@ -26,6 +28,13 @@ Students are expected to be familiar with:
 ## Schedule
 See the full schedule in the [Summer Institute 2026 agenda](./AGENDA.md).
 
+## Employment Form
+
+A completed Student Employment Form was submitted to Elvert Vasquez (evasquez@ucsd.edu) on May 15, 2026 with:
+* Start date: June 20, 2026
+* Funding index: 0 (volunteer / CCR credit)
+* CC: Mary Thomas (mpthomas@ucsd.edu)
+
 ## Interested?
 
-Please apply using our Google form:  FORM HERE
+Please apply via our Handshake posting: https://ucsd.joinhandshake.com/public/jobs/11000308
