@@ -60,7 +60,9 @@ int main(int argc, char *argv[]) {
     printf("Iterations:  %d\n\n", iterations);
 
     double i_total_time = 0;
+    struct timespec start_real, end_real;
     // Start timing
+    timespec_get(&start_real, TIME_UTC);
     clock_t start_time = clock();
 
     // Run AXPY many times, to make the time measurable
@@ -74,10 +76,14 @@ int main(int argc, char *argv[]) {
 
     // End timing
     clock_t end_time = clock();
+    timespec_get(&end_real, TIME_UTC);
+
     double total_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    double real_time = (end_real.tv_sec - start_real.tv_sec) +
+                       (end_real.tv_nsec - start_real.tv_nsec) / 1e9;
 
     // Print results
-    printf("Total time:  %0.4f seconds (partials sum: %0.4f)\n", total_time, i_total_time);
+    printf("Total time:  %0.4f seconds (used %0.4f CPU seconds, partials sum: %0.4f)\n", real_time, total_time, i_total_time);
 
     // Prevent compiler from optimizing away the whole loop by using the result
     float sum = 0;
