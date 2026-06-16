@@ -79,3 +79,12 @@ gcc -O3 -fopenmp -o axpy_o3 axpy.c -lm
 
 You can then execute the code exactly as you have done before.
 
+Limit parallelism
+-----------------
+
+Limit number of cores in use, e.g.
+export OMP_NUM_THREADS=3
+
+and re-run the code again.
+Compare the run times.
+
