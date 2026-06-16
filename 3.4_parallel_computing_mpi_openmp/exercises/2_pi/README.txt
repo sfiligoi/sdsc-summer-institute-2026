@@ -1,7 +1,7 @@
-Simple AXPY example
+Simple PI example
 ===================
 
-This simple C program computes AXPY of a large buffer several times.
+This simple C program computes PI several times.
 There is no explicit parallelization in the provided code.
 
 Build and test setup
