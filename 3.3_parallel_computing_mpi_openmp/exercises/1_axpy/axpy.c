@@ -72,6 +72,9 @@ int main(int argc, char *argv[]) {
         one_axpy(vector_size, Z, X, Y, alpha);
         clock_t i_end_time = clock();
         i_total_time += (double)(i_end_time - i_start_time) / CLOCKS_PER_SEC;
+        // make a chage to the input parameters, to avoid compiler over-optimization
+        X[iter%vector_size] = Z[0];
+        Y[0] = Z[iter%vector_size];
     }
 
     // End timing
