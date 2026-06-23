@@ -11,7 +11,7 @@ Build and test setup
 --------------------
 
 Start an interactive session with
-srun --partition=<given_partition> --res=<reservation> --account=<given_account> --pty --nodes=1 --ntasks-per-node=1 --mem=32G -c 16 -t 00:30:00 /bin/bash
+srun --partition=<given_partition> --res=<reservation> --account=<given_account> --pty --nodes=1 --ntasks-per-node=1 --mem=32G -c 16 --cpu-bind=map_cpu:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 -t 00:30:00 /bin/bash
 
 Then load the correct compiler suite
 module load gcc/10.2.0
