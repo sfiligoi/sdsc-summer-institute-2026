@@ -13,6 +13,10 @@ program bench_collision
     complex, allocatable :: cap_h_v(:,:,:,:)
     real, allocatable :: cmat(:,:,:,:)
     complex, allocatable :: fsendf(:,:,:,:)
+    ! random handling
+    integer :: n, seed_value
+    integer, allocatable :: seed_array(:)
+
 
     ! --- Input Parsing ---
     ! Expecting: ./bench nv_loc nt nc_loc n_sim vcount n_iter
@@ -35,6 +39,12 @@ program bench_collision
     allocate(fsendf(nv_loc, nt, nc_loc, vcount * n_sim))
 
     ! --- Initialization ---
+    call random_seed(size = n)
+    allocate(seed_array(n))
+    seed_value = 123456789 
+    seed_array = seed_value
+    call random_seed(put = seed_array)
+
     call random_number(cap_h_v%re)
     call random_number(cap_h_v%im)
     call random_number(cmat)

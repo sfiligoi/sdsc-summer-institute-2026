@@ -3,6 +3,7 @@
 #include <chrono>
 #include <random>
 #include <iostream>
+#include <omp.h>
 
 // Helper class, to mimick a Fortran-stype 4D Array
 template<typename TReal>
