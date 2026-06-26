@@ -91,4 +91,13 @@ a different parallelization strategy.
 Try parallelizing the for loop in main, instead.
 Compare the runtimes.
 
+Limit parallelism
+-----------------
+
+Limit number of cores in use, e.g.
+export OMP_NUM_THREADS=3
+
+and re-run the code again.
+Compare the run times.
+
 
