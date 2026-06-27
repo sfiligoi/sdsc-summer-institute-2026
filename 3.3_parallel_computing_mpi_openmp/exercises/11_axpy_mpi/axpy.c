@@ -9,8 +9,8 @@
 #include <mpi.h>
 
 // Default values if no command line arguments are provided
-#define DEFAULT_VECTOR_SIZE 1000000
-#define DEFAULT_ITERATIONS 500
+#define DEFAULT_VECTOR_SIZE 3*128*1024*1024
+#define DEFAULT_ITERATIONS 10
 
 
 void one_axpy(int vector_size, float *Z, float *X, float *Y, float alpha) {
@@ -80,12 +80,20 @@ int main(int argc, char *argv[]) {
         one_axpy(vector_size, Z, X, Y, alpha);
         clock_t i_end_time = clock();
         i_total_time += (double)(i_end_time - i_start_time) / CLOCKS_PER_SEC;
-        // make a change to the input parameters, to avoid compiler over-optimization
-	
-        // TODO: Some of the data may not be in my local buffer slice
-	//       If needed, send to the right process, or fetch from the right process
-        X[iter%vector_size] = Z[0];
-        Y[0] = Z[iter%vector_size];
+        // Prevent compiler from over-optimizing by using the result
+        // Print intermediate results
+        // TODO: I don't have all the data, collect and aggregate partial sums from the other processes
+        float sum = 0;
+        for (int i=0;i<vector_size; i++) sum += Z[i];
+
+        // TODO: Only one process should print out
+        printf("[%i] Sum: %f\n", iter, sum);
+
+	// rotate pointers
+	float *tmp = Z;
+	Z=X;
+	X=Y;
+	Y=tmp;
     }
 
     // End timing
@@ -99,8 +107,6 @@ int main(int argc, char *argv[]) {
     // Print results
     // TODO: Only one process should print out
     printf("Total time:  %0.4f seconds (used %0.4f CPU seconds, partials sum: %0.4f)\n", real_time, total_time, i_total_time);
-
-    // Prevent compiler from optimizing away the whole loop by using the result
 
     // TODO: I don't have all the data, collect and aggregate partial sums from the other processes
     float sum = 0;

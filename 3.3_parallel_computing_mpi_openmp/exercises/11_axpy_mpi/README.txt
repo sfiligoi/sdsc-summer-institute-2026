@@ -15,7 +15,7 @@ salloc --partition=<given_partition> --res=<reservation> --account=<given_accoun
 You can check which node the MPI executable will run with
 srun -n 1 hostname
 
-Then load the correct compiler and MPI
+Then load the correct compiler and MPI (we will compile locally)
 module load gcc/10.2.0 openmpi/4.1.3
 
 Compile instructions:
